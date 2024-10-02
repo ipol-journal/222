@@ -7,10 +7,7 @@ RUN mkdir -p $bin
 WORKDIR $bin
 COPY . .
 
-
 RUN make
-RUN cp equalization generate_output add_noise inverse_compositional_algorithm $bin
-
 
 # the execution will happen in the folder /workdir/exec
 # it will be created by IPOL
